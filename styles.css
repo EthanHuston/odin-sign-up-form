@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Norse;
+  src: url("./assets/Norse-Bold.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +14,37 @@ body {
 }
 
 .image-container {
-  background-image: url("/leaf.jpg");
+  background-image: url("./assets/leaf.jpg");
   background-size: cover;
-  width: 40%;
+  width: 40vw;
   height: 100vh;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  position: relative;
+  top: 20vh;
+}
+.logo {
+  height: 200px;
+}
+h1 {
+  color: white;
+  font-family: Norse;
+  font-size: 160px;
+}
+
+.attribution {
+  margin: 8px;
+  position: relative;
+  top: 70vh;
+  color: white;
+  text-align: center;
+}
+.attribution a {
+  color: white;
 }
